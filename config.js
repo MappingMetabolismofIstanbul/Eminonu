@@ -16,10 +16,10 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Kentsel Boşluğun Üretimi : Eminönü Meydanı / Production of Urban Voids: Eminönü Square',
+    title: 'Kentsel Boşluğun Üretimi : Eminönü Meydanı / Production of Urban Void: Eminönü Square',
     subtitle: '',
     byline: 'BAP_Mapping Metabolism of Istanbul_Interactive Mapping / MEF AAP_027',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'BAP_Mapping Metabolism of Istanbul_Interactive Mapping / MEF AAP_027',
     chapters: [
           {
             id: '1.1',
@@ -86,7 +86,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: '',
-            image: 'https://i.ibb.co/Kn1qc1t/3.png',
+            image: 'https://i.ibb.co/fd2T9qdS/3.png',
             description: '',
             location: {
                  center: [28.97131817837604,41.018050376587205],
@@ -119,35 +119,8 @@ var config = {
             image: 'https://i.ibb.co/GQxFwCf4/4.png',
             description: '',
             location: {
-                 center: [28.97131817837604,41.018050376587205],
-                zoom: 20,
-                pitch: 40,
-                bearing: 0,
-                speed: 1,
-                curve: 2
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 0, // change the speed at which it zooms out
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: '5',
-            alignment: 'centered',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
                 center: [28.97131817837604,41.018050376587205],
-                zoom: 20,
+                zoom: 16,
                 pitch: 10,
                 bearing: 0,
                 speed: 1,
@@ -159,11 +132,12 @@ var config = {
                 //speed: 2, // make the flying slow
                 //curve: 0, // change the speed at which it zooms out
             },
-            mapAnimation: 'right',
-            rotateAnimation: true,
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
         },
+       
     ]
 };
